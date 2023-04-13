@@ -44,9 +44,9 @@ class ServiceManager {
 
 struct ServicesConstants {
     ///  Success URL
-//    let url = "https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio.json"
+    let url = "https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio.json"
     ///  Empty URL
 //    let url = "https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio_empty.json"
     ///  Error URL
-    let url = "https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio_malformed.json"
+//    let url = "https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio_malformed.json"
 }

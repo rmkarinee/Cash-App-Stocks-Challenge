@@ -66,6 +66,7 @@
 		42EB64B429E729C800B7C2D9 /* CashAppStock */ = {
 			isa = PBXGroup;
 			children = (
+				42F8111829E8A70000C2E50D /* Protocol */,
 				42EB64CB29E729E400B7C2D9 /* Controller */,
 				42EB64CA29E729DE00B7C2D9 /* View */,
 				42EB64C929E729D000B7C2D9 /* Model */,
@@ -75,7 +76,6 @@
 				42EB64BE29E729C900B7C2D9 /* Assets.xcassets */,
 				42EB64C029E729C900B7C2D9 /* LaunchScreen.storyboard */,
 				42EB64C329E729C900B7C2D9 /* Info.plist */,
-				42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */,
 			);
 			path = CashAppStock;
 			sourceTree = "<group>";
@@ -112,6 +112,14 @@
 				42EB64D429E7312F00B7C2D9 /* ServiceManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		42F8111829E8A70000C2E50D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
