@@ -19,6 +19,8 @@ class StockViewController: UIViewController {
         }
     }
     
+    var viewModel = StockViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -27,20 +29,15 @@ class StockViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
     
-        serviceManager.requestStock(completion: handleRequestSuccess(data:))
+        serviceManager.requestStock(completion: viewModel.handleRequestSuccess(data:))
     }
     
     func registerCell() {
         self.tableView.register(StockTableViewCell.nib(), forCellReuseIdentifier: StockTableViewCell.identifier)
     }
-    
-    func handleRequestSuccess(data: StockModel) {
-        stockList = data.stocks
-    }
-    
+
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -50,7 +47,7 @@ class StockViewController: UIViewController {
 extension StockViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stockList.count
+        return viewModel.stockList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,7 +55,7 @@ extension StockViewController: UITableViewDataSource, UITableViewDelegate {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "stockCell", for: indexPath) as? StockTableViewCell {
             cell.layer.borderWidth = 1
             cell.selectionStyle = .none
-            cell.setUpCell(stockList[indexPath.row])
+            cell.setUpCell(viewModel.stockList[indexPath.row])
             
             return cell
             

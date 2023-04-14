@@ -18,6 +18,7 @@
 		42EB64D329E72F2D00B7C2D9 /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EB64D129E72F2D00B7C2D9 /* StockTableViewCell.xib */; };
 		42EB64D529E7312F00B7C2D9 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64D429E7312F00B7C2D9 /* ServiceManager.swift */; };
 		42F8110F29E84AC000C2E50D /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */; };
+		42F8111B29E8F3FC00C2E50D /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8111A29E8F3FC00C2E50D /* StockViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		42EB64D129E72F2D00B7C2D9 /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
 		42EB64D429E7312F00B7C2D9 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
+		42F8111A29E8F3FC00C2E50D /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,8 @@
 		42EB64B429E729C800B7C2D9 /* CashAppStock */ = {
 			isa = PBXGroup;
 			children = (
+				42F8111929E8F37900C2E50D /* ViewModel */,
 				42F8111829E8A70000C2E50D /* Protocol */,
-				42EB64CB29E729E400B7C2D9 /* Controller */,
 				42EB64CA29E729DE00B7C2D9 /* View */,
 				42EB64C929E729D000B7C2D9 /* Model */,
 				42EB64D629E74DCF00B7C2D9 /* Network */,
@@ -91,6 +93,7 @@
 		42EB64CA29E729DE00B7C2D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				42EB64CB29E729E400B7C2D9 /* Controller */,
 				42EB64BB29E729C800B7C2D9 /* Main.storyboard */,
 				42EB64D129E72F2D00B7C2D9 /* StockTableViewCell.xib */,
 			);
@@ -120,6 +123,14 @@
 				42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		42F8111929E8F37900C2E50D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				42F8111A29E8F3FC00C2E50D /* StockViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				42F8110F29E84AC000C2E50D /* ViewCodeProtocol.swift in Sources */,
 				42EB64CF29E72C5A00B7C2D9 /* StockViewController.swift in Sources */,
 				42EB64D529E7312F00B7C2D9 /* ServiceManager.swift in Sources */,
+				42F8111B29E8F3FC00C2E50D /* StockViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

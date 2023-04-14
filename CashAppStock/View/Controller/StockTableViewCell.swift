@@ -10,6 +10,7 @@ import UIKit
 class StockTableViewCell: UITableViewCell {
     
     static let identifier = "stockCell"
+    var viewModel = StockViewModel()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -89,7 +90,7 @@ class StockTableViewCell: UITableViewCell {
         tickerLabel.text = item.ticker
         nameLabel.text = "Name: \(item.name)"
         currencyLabel.text = "Currency: \(item.currency)"
-        priceConvert(item.current_price_cents)
+        priceLabel.text = viewModel.priceConvert(item.current_price_cents)
         dateTimeLabel.text = "Date/Time: \(String(item.current_price_timestamp)) "
         
         if let quantity = item.quantity {
@@ -97,11 +98,6 @@ class StockTableViewCell: UITableViewCell {
         } else {
             return quantityLabel.text = "Quantity: Unavailable "
         }
-    }
-    
-    func priceConvert(_ price: Int) {
-        let priceConvert = Float(price)/100
-        priceLabel.text = "Price: \(String(priceConvert))"
     }
 }
 
