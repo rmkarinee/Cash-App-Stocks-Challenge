@@ -8,8 +8,6 @@
 import UIKit
 
 class StockViewController: UIViewController {
-
-    @IBOutlet weak var tableView: UITableView!
     
     var serviceManager = ServiceManager()
     
@@ -23,6 +21,7 @@ class StockViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         
         registerCell()
         self.tableView.delegate = self
@@ -38,6 +37,13 @@ class StockViewController: UIViewController {
     func handleRequestSuccess(data: StockModel) {
         stockList = data.stocks
     }
+    
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
 }
 
 //MARK:: TableView Delegate and DataSource
@@ -62,5 +68,21 @@ extension StockViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(150)
+    }
+}
+
+extension StockViewController: ViewCodeProtocol {
+    
+    func buildViewHierarchy() {
+        view.addSubview(tableView)
+    }
+    
+    func setupConstraints() {
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0)
+        ])
     }
 }
