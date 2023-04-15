@@ -9,33 +9,26 @@ import UIKit
 
 class StockViewController: UIViewController {
     
-    var serviceManager = ServiceManager()
-    
-    var stockList: [StockItem] = [] {
-        didSet{
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-    }
-    
+    var stockList: [StockItem] = []
     var viewModel = StockViewModel()
+    var serviceManager = ServiceManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
         
+        setupView()
         registerCell()
+        viewModel.requestStocks()
+        viewModel.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
-    
-        serviceManager.requestStock(completion: viewModel.handleRequestSuccess(data:))
+
     }
     
     func registerCell() {
         self.tableView.register(StockTableViewCell.nib(), forCellReuseIdentifier: StockTableViewCell.identifier)
     }
-
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -43,11 +36,20 @@ class StockViewController: UIViewController {
     }()
 }
 
+extension StockViewController: StockViewModelDelegate {
+    func didFinishRequest() {
+        stockList = viewModel.stockItems
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+}
+
 //MARK:: TableView Delegate and DataSource
 extension StockViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.stockList.count
+        return viewModel.numberOfItens()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,7 +57,7 @@ extension StockViewController: UITableViewDataSource, UITableViewDelegate {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "stockCell", for: indexPath) as? StockTableViewCell {
             cell.layer.borderWidth = 1
             cell.selectionStyle = .none
-            cell.setUpCell(viewModel.stockList[indexPath.row])
+            cell.setUpCell(stockList[indexPath.row])
             
             return cell
             

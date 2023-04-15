@@ -34,6 +34,7 @@ class StockTableViewCell: UITableViewCell {
     lazy var tickerLabel: UILabel = {
         let label = UILabel()
         label.backgroundColor = .clear
+        label.textColor = .red
         label.textAlignment = .center
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -123,5 +124,3 @@ extension StockTableViewCell: ViewCodeProtocol {
         ])
     }
 }
-
-

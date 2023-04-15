@@ -16,9 +16,13 @@
 		42EB64CF29E72C5A00B7C2D9 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64CE29E72C5A00B7C2D9 /* StockViewController.swift */; };
 		42EB64D229E72F2D00B7C2D9 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64D029E72F2D00B7C2D9 /* StockTableViewCell.swift */; };
 		42EB64D329E72F2D00B7C2D9 /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EB64D129E72F2D00B7C2D9 /* StockTableViewCell.xib */; };
-		42EB64D529E7312F00B7C2D9 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64D429E7312F00B7C2D9 /* ServiceManager.swift */; };
 		42F8110F29E84AC000C2E50D /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */; };
 		42F8111B29E8F3FC00C2E50D /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8111A29E8F3FC00C2E50D /* StockViewModel.swift */; };
+		42F8112329E9E6EE00C2E50D /* StocksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8112229E9E6EE00C2E50D /* StocksService.swift */; };
+		42F8112529E9E80500C2E50D /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8112429E9E80500C2E50D /* URLSessionProvider.swift */; };
+		42F8112729E9E82A00C2E50D /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8112629E9E82A00C2E50D /* Provider.swift */; };
+		42F8112929E9E8FF00C2E50D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8112829E9E8FF00C2E50D /* NetworkError.swift */; };
+		42F8112D29E9F7CB00C2E50D /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8112C29E9F7CB00C2E50D /* URLSessionExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +37,13 @@
 		42EB64CE29E72C5A00B7C2D9 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
 		42EB64D029E72F2D00B7C2D9 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		42EB64D129E72F2D00B7C2D9 /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
-		42EB64D429E7312F00B7C2D9 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		42F8111A29E8F3FC00C2E50D /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
+		42F8112229E9E6EE00C2E50D /* StocksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksService.swift; sourceTree = "<group>"; };
+		42F8112429E9E80500C2E50D /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		42F8112629E9E82A00C2E50D /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		42F8112829E9E8FF00C2E50D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		42F8112C29E9F7CB00C2E50D /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +120,10 @@
 		42EB64D629E74DCF00B7C2D9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				42EB64D429E7312F00B7C2D9 /* ServiceManager.swift */,
+				42F8112229E9E6EE00C2E50D /* StocksService.swift */,
+				42F8112429E9E80500C2E50D /* URLSessionProvider.swift */,
+				42F8112829E9E8FF00C2E50D /* NetworkError.swift */,
+				42F8112C29E9F7CB00C2E50D /* URLSessionExtension.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */,
+				42F8112629E9E82A00C2E50D /* Provider.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -206,12 +218,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EB64D229E72F2D00B7C2D9 /* StockTableViewCell.swift in Sources */,
+				42F8112529E9E80500C2E50D /* URLSessionProvider.swift in Sources */,
 				42EB64CD29E72A1900B7C2D9 /* StockModel.swift in Sources */,
+				42F8112D29E9F7CB00C2E50D /* URLSessionExtension.swift in Sources */,
+				42F8112329E9E6EE00C2E50D /* StocksService.swift in Sources */,
 				42EB64B629E729C800B7C2D9 /* AppDelegate.swift in Sources */,
 				42EB64B829E729C800B7C2D9 /* SceneDelegate.swift in Sources */,
 				42F8110F29E84AC000C2E50D /* ViewCodeProtocol.swift in Sources */,
+				42F8112729E9E82A00C2E50D /* Provider.swift in Sources */,
 				42EB64CF29E72C5A00B7C2D9 /* StockViewController.swift in Sources */,
-				42EB64D529E7312F00B7C2D9 /* ServiceManager.swift in Sources */,
+				42F8112929E9E8FF00C2E50D /* NetworkError.swift in Sources */,
 				42F8111B29E8F3FC00C2E50D /* StockViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

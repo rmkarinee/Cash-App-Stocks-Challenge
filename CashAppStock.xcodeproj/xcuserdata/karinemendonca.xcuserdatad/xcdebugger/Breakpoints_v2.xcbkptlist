@@ -23,63 +23,143 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D56E5035-5DF0-4276-A61D-1F17E3536E9F"
+            uuid = "E5A62DC5-DB4A-4C85-9E40-69DCD838C4C0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CashAppStock/View/Controller/StockViewController.swift"
+            filePath = "CashAppStock/Network/Service.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "urlRequest"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C733D07B-6B13-45D3-ADF4-4A6AFA49AC4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashAppStock/Network/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "url"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F8639E2-B233-4A08-94F9-4FB5F671ECE5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashAppStock/Network/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "url"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8430835B-D06D-4221-A7F9-294259A0CD99"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashAppStock/Network/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "urlRequest"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FA5F7A74-2E51-47B4-9662-70351243FDA9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashAppStock/Network/ServiceProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "load(service:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0949450B-4775-40FA-B5AA-5B92B41639E8"
+            uuid = "18C1CB82-29B5-4CBA-9234-9E13F8F4823D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CashAppStock/Network/ServiceManager.swift"
+            filePath = "CashAppStock/Network/ServiceProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "requestStock(completion:)"
-            landmarkType = "7">
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "ServiceProvider"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC83AC7E-6987-4C84-8131-40F834F935F8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashAppStock/Network/ServiceProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "ServiceProvider"
+            landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "0949450B-4775-40FA-B5AA-5B92B41639E8 - 7de5f0892fecb8fe"
+                  uuid = "EC83AC7E-6987-4C84-8131-40F834F935F8 - 782ddb4e8be96953"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CashAppStock.ServiceManager.requestStock(completion: (CashAppStock.StockModel) -&gt; ()) -&gt; ()"
+                  symbolName = "CashAppStock.ServiceProvider.load&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(service: &#x3c4;_0_0, decodeType: &#x3c4;_1_0.Type, completion: (CashAppStock.Result&lt;&#x3c4;_1_0&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "CashAppStock"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/Network/ServiceManager.swift"
+                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/Network/ServiceProvider.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "1024">
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "232">
                </Location>
                <Location
-                  uuid = "0949450B-4775-40FA-B5AA-5B92B41639E8 - 7de5f0892fecb8fe"
+                  uuid = "EC83AC7E-6987-4C84-8131-40F834F935F8 - 17112a105a61bdd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CashAppStock.ServiceManager.requestStock(completion: (CashAppStock.StockModel) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (CashAppStock.Result&lt;Foundation.Data&gt;) -&gt; () in CashAppStock.ServiceProvider.load&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(service: &#x3c4;_0_0, decodeType: &#x3c4;_1_0.Type, completion: (CashAppStock.Result&lt;&#x3c4;_1_0&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "CashAppStock"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/Network/ServiceManager.swift"
+                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/Network/ServiceProvider.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "1072">
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "304">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -87,81 +167,161 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "18BFA09D-3E91-4948-8A4F-741DE5F77C7E"
+            uuid = "8D917C0E-3697-45F9-98CE-2D9701A404E0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CashAppStock/View/Controller/StockViewController.swift"
+            filePath = "CashAppStock/Network/ServiceProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkName = "call(_:deliverQueue:completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8D917C0E-3697-45F9-98CE-2D9701A404E0 - 88bdcea4cb32bc4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CashAppStock.ServiceProvider.call(_: Foundation.URLRequest, deliverQueue: __C.OS_dispatch_queue, completion: (CashAppStock.Result&lt;Foundation.Data&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CashAppStock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/Network/ServiceProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  uuid = "8D917C0E-3697-45F9-98CE-2D9701A404E0 - d0bd051aa5e9b40a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CashAppStock.ServiceProvider.call(_: Foundation.URLRequest, deliverQueue: __C.OS_dispatch_queue, completion: (CashAppStock.Result&lt;Foundation.Data&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CashAppStock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/Network/ServiceProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0B7F793F-5C05-4284-9885-5FF270967C16"
+            uuid = "FF64941B-487F-4CC8-8741-081150FF835C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CashAppStock/Network/ServiceManager.swift"
+            filePath = "CashAppStock/Network/ServiceProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "requestStock(completion:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "call(_:deliverQueue:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FF64941B-487F-4CC8-8741-081150FF835C - 88bdcea4cb32bccf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CashAppStock.ServiceProvider.call(_: Foundation.URLRequest, deliverQueue: __C.OS_dispatch_queue, completion: (CashAppStock.Result&lt;Foundation.Data&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CashAppStock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/Network/ServiceProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1160">
+               </Location>
+               <Location
+                  uuid = "FF64941B-487F-4CC8-8741-081150FF835C - 47f8f5c58aa0028f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CashAppStock.ServiceProvider.call(_: Foundation.URLRequest, deliverQueue: __C.OS_dispatch_queue, completion: (CashAppStock.Result&lt;Foundation.Data&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CashAppStock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/Network/ServiceProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9E5F85C-22B1-48A3-A42B-86CA103B1644"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashAppStock/ViewModel/StockViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "fetchSucessData(data:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DBFE667A-A3A7-43DE-9F3D-CF6A46708118"
+            uuid = "76A963CE-BF35-40AF-ABB7-64A6954F3241"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashAppStock/ViewModel/StockViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "requestStocks()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FEE35A5-DA45-40A0-BA6D-558F6C3014F9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CashAppStock/View/Controller/StockViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "didFinishRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DD31691-50B6-4C27-A1C0-116799E7A98E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashAppStock/ViewModel/StockViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "requestStocks()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DBFE667A-A3A7-43DE-9F3D-CF6A46708118 - 681a5a65348eab61"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CashAppStock.StockViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "CashAppStock"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/View/Controller/StockViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "284">
-               </Location>
-               <Location
-                  uuid = "DBFE667A-A3A7-43DE-9F3D-CF6A46708118 - bffdfdc2d398694c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #2 (CashAppStock.StockModel) -&gt; () in implicit closure #1 (CashAppStock.StockViewModel) -&gt; (CashAppStock.StockModel) -&gt; () in CashAppStock.StockViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "CashAppStock"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/karinemendonca/Desktop/Cash-App-Stocks-Challenge/CashAppStock/View/Controller/StockViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
