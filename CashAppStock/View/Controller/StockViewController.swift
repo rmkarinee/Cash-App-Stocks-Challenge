@@ -12,29 +12,37 @@ class StockViewController: UIViewController {
     var stockList: [StockItem] = []
     var viewModel = StockViewModel()
     var newView = UIView()
+    var whichRequest: String = ""
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "StockViewController", bundle: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setLoading(true)
-        
+
         setupView()
         registerCell()
-        viewModel.requestStocks()
         viewModel.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        typeRequest()
+
     }
     
     func registerCell() {
         self.tableView.register(StockTableViewCell.nib(), forCellReuseIdentifier: StockTableViewCell.identifier)
     }
     
-    private lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
-    }()
+    func typeRequest() {
+        setLoading(true)
+        switch whichRequest {
+        case "Success Endpoint": return viewModel.requestStocks()
+        case "Empty Endpoint": return viewModel.requestEmptyStocks()
+        case "Error Endpoint": return viewModel.requestFailStocks()
+        default: break
+        }
+    }
     
     func setLoading(_ isLoading: Bool) {
         if isLoading {
@@ -52,20 +60,48 @@ class StockViewController: UIViewController {
         }
     }
     
-    func openAlert() {
-        let message = UIAlertController(title: "Attention", message: "There are no items in the Stock", preferredStyle: .alert)
-        self.present(message, animated: true, completion: nil)
+    func openAlert(_ alertType: AlertType) {
+        let type = alertType.getMessage()
+        let alert = UIAlertController(title: type.title, message: type.message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: type.buttonLabel, style: .default, handler: { action in
+            
+            if action.title == "OK" {
+                if let navigationController = self.navigationController {
+                        navigationController.popViewController(animated: true)
+                    } else {
+                        self.dismiss(animated: true, completion: nil)
+                    }
+            } else if action.title == "Try Again" {
+                self.viewModel.requestStocks()
+            }
+
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
+    
+    // MARK: - UI properties
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
 }
 
 extension StockViewController: StockViewModelDelegate {
+    func errorAlert() {
+        self.setLoading(false)
+        DispatchQueue.main.async {
+            self.openAlert(.errorAlert)
+        }
+    }
+    
     func didFinishRequest(isEmpty: Bool) {
         guard !isEmpty else {
             self.setLoading(false)
             DispatchQueue.main.async {
-                self.openAlert()
+                self.openAlert(.emptyAlert)
             }
-            return print("Empty List")
+            return
         }
         self.setLoading(false)
         stockList = viewModel.stockItems

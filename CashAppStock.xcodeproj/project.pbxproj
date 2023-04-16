@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		42D7ECBE29EAF38300F05674 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8111A29E8F3FC00C2E50D /* StockViewModel.swift */; };
 		42D7ECCD29EAF56600F05674 /* StockViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7ECCC29EAF56600F05674 /* StockViewModelTests.swift */; };
-		42D7ECDA29EB5E6400F05674 /* MockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7ECD929EB5E6400F05674 /* MockTests.swift */; };
 		42D7ECDB29EB5E6400F05674 /* MockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7ECD929EB5E6400F05674 /* MockTests.swift */; };
+		42D7ECE429EC2BBE00F05674 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7ECE229EC2BBE00F05674 /* StockViewController.swift */; };
+		42D7ECE529EC2BBE00F05674 /* StockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D7ECE329EC2BBE00F05674 /* StockViewController.xib */; };
+		42D7ECE729EC32CC00F05674 /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7ECE629EC32CC00F05674 /* AlertConfig.swift */; };
 		42EB64B629E729C800B7C2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64B529E729C800B7C2D9 /* AppDelegate.swift */; };
 		42EB64B829E729C800B7C2D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64B729E729C800B7C2D9 /* SceneDelegate.swift */; };
 		42EB64BD29E729C800B7C2D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EB64BB29E729C800B7C2D9 /* Main.storyboard */; };
 		42EB64BF29E729C900B7C2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EB64BE29E729C900B7C2D9 /* Assets.xcassets */; };
 		42EB64C229E729C900B7C2D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EB64C029E729C900B7C2D9 /* LaunchScreen.storyboard */; };
 		42EB64CD29E72A1900B7C2D9 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64CC29E72A1900B7C2D9 /* StockModel.swift */; };
-		42EB64CF29E72C5A00B7C2D9 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64CE29E72C5A00B7C2D9 /* StockViewController.swift */; };
+		42EB64CF29E72C5A00B7C2D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64CE29E72C5A00B7C2D9 /* ViewController.swift */; };
 		42EB64D229E72F2D00B7C2D9 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64D029E72F2D00B7C2D9 /* StockTableViewCell.swift */; };
 		42EB64D329E72F2D00B7C2D9 /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EB64D129E72F2D00B7C2D9 /* StockTableViewCell.xib */; };
 		42F8110F29E84AC000C2E50D /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */; };
@@ -42,6 +44,9 @@
 		42D7ECC329EAF52B00F05674 /* CashAppStockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashAppStockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D7ECCC29EAF56600F05674 /* StockViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModelTests.swift; sourceTree = "<group>"; };
 		42D7ECD929EB5E6400F05674 /* MockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTests.swift; sourceTree = "<group>"; };
+		42D7ECE229EC2BBE00F05674 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		42D7ECE329EC2BBE00F05674 /* StockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockViewController.xib; sourceTree = "<group>"; };
+		42D7ECE629EC32CC00F05674 /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		42EB64B229E729C800B7C2D9 /* CashAppStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashAppStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EB64B529E729C800B7C2D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42EB64B729E729C800B7C2D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +55,7 @@
 		42EB64C129E729C900B7C2D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42EB64C329E729C900B7C2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42EB64CC29E72A1900B7C2D9 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
-		42EB64CE29E72C5A00B7C2D9 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		42EB64CE29E72C5A00B7C2D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42EB64D029E72F2D00B7C2D9 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		42EB64D129E72F2D00B7C2D9 /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
 		42F8110E29E84AC000C2E50D /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 		42EB64C929E729D000B7C2D9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				42D7ECE629EC32CC00F05674 /* AlertConfig.swift */,
 				42EB64CC29E72A1900B7C2D9 /* StockModel.swift */,
 			);
 			path = Model;
@@ -145,6 +151,7 @@
 			children = (
 				42EB64CB29E729E400B7C2D9 /* Controller */,
 				42EB64BB29E729C800B7C2D9 /* Main.storyboard */,
+				42D7ECE329EC2BBE00F05674 /* StockViewController.xib */,
 				42EB64D129E72F2D00B7C2D9 /* StockTableViewCell.xib */,
 			);
 			path = View;
@@ -153,8 +160,9 @@
 		42EB64CB29E729E400B7C2D9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				42EB64CE29E72C5A00B7C2D9 /* StockViewController.swift */,
+				42EB64CE29E72C5A00B7C2D9 /* ViewController.swift */,
 				42EB64D029E72F2D00B7C2D9 /* StockTableViewCell.swift */,
+				42D7ECE229EC2BBE00F05674 /* StockViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -279,6 +287,7 @@
 				42EB64BF29E729C900B7C2D9 /* Assets.xcassets in Resources */,
 				42EB64D329E72F2D00B7C2D9 /* StockTableViewCell.xib in Resources */,
 				42EB64BD29E729C800B7C2D9 /* Main.storyboard in Resources */,
+				42D7ECE529EC2BBE00F05674 /* StockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,17 +308,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EB64D229E72F2D00B7C2D9 /* StockTableViewCell.swift in Sources */,
+				42D7ECE429EC2BBE00F05674 /* StockViewController.swift in Sources */,
 				42F8112529E9E80500C2E50D /* URLSessionProvider.swift in Sources */,
+				42D7ECE729EC32CC00F05674 /* AlertConfig.swift in Sources */,
 				42D7ECBE29EAF38300F05674 /* StockViewModel.swift in Sources */,
 				42EB64CD29E72A1900B7C2D9 /* StockModel.swift in Sources */,
 				42F8112D29E9F7CB00C2E50D /* URLSessionExtension.swift in Sources */,
 				42F8112329E9E6EE00C2E50D /* StocksService.swift in Sources */,
 				42EB64B629E729C800B7C2D9 /* AppDelegate.swift in Sources */,
-				42D7ECDA29EB5E6400F05674 /* MockTests.swift in Sources */,
 				42EB64B829E729C800B7C2D9 /* SceneDelegate.swift in Sources */,
 				42F8110F29E84AC000C2E50D /* ViewCodeProtocol.swift in Sources */,
 				42F8112729E9E82A00C2E50D /* Provider.swift in Sources */,
-				42EB64CF29E72C5A00B7C2D9 /* StockViewController.swift in Sources */,
+				42EB64CF29E72C5A00B7C2D9 /* ViewController.swift in Sources */,
 				42F8112929E9E8FF00C2E50D /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

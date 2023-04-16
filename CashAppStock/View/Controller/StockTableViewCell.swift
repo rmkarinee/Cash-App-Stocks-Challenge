@@ -21,6 +21,7 @@ class StockTableViewCell: UITableViewCell {
         return UINib(nibName: "StockTableViewCell", bundle: nil)
     }
     
+    // MARK: - UI properties
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
