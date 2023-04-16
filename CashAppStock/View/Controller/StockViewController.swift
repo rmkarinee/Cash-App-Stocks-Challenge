@@ -11,7 +11,6 @@ class StockViewController: UIViewController {
     
     var stockList: [StockItem] = []
     var viewModel = StockViewModel()
-    var serviceManager = ServiceManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +48,7 @@ extension StockViewController: StockViewModelDelegate {
 extension StockViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfItens()
+        return viewModel.stockItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

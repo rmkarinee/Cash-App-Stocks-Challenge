@@ -7,19 +7,25 @@
 
 import Foundation
 
-protocol StockViewModelDelegate {
+protocol StockViewModelDelegate: AnyObject {
     func didFinishRequest()
 }
 
 class StockViewModel {
     
-    var serviceManager = ServiceManager()
     var stockItems = [StockItem]()
-    var delegate: StockViewModelDelegate?
+    public weak var delegate: StockViewModelDelegate?
     
     func priceConvert(_ price: Int) -> String {
         let priceConvert = Float(price)/100
-        return "Price: \(String(priceConvert))"
+        return String(priceConvert)
+    }
+    
+    func convertToDate(_ timestamp: Int) -> String {
+        let date = Date(timeIntervalSince1970: Double(timestamp))
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/YYYY hh:mm"
+        return dateFormatter.string(from: date)
     }
     
     func requestStocks() {
@@ -28,7 +34,7 @@ class StockViewModel {
         session.request(type: StockModel.self, url: service) { (result) in
             switch result {
             case .success(let result):
-                self.fetchSucessData(data: result)
+                self.stockItems = result.stocks
                 self.delegate?.didFinishRequest()
             case .failure(let error):
                 print(error.localizedDescription)
@@ -36,10 +42,6 @@ class StockViewModel {
         }
     }
 
-    func fetchSucessData(data: StockModel) {
-        stockItems = data.stocks
-    }
-    
     func numberOfItens() -> Int {
         return stockItems.count
     }

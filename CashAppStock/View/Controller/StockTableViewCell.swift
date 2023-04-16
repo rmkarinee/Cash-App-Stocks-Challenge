@@ -91,8 +91,8 @@ class StockTableViewCell: UITableViewCell {
         tickerLabel.text = item.ticker
         nameLabel.text = "Name: \(item.name)"
         currencyLabel.text = "Currency: \(item.currency)"
-        priceLabel.text = viewModel.priceConvert(item.current_price_cents)
-        dateTimeLabel.text = "Date/Time: \(String(item.current_price_timestamp)) "
+        priceLabel.text = "Price: \(viewModel.priceConvert(item.current_price_cents))"
+        dateTimeLabel.text = "Date/Time: \(viewModel.convertToDate(item.current_price_timestamp)) "
         
         if let quantity = item.quantity {
             quantityLabel.text = "Quantity: \(String(quantity))"
