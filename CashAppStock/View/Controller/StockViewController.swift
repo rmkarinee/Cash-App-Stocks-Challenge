@@ -11,9 +11,12 @@ class StockViewController: UIViewController {
     
     var stockList: [StockItem] = []
     var viewModel = StockViewModel()
-    
+    var newView = UIView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setLoading(true)
         
         setupView()
         registerCell()
@@ -33,10 +36,27 @@ class StockViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
+    
+    func setLoading(_ isLoading: Bool) {
+        if isLoading {
+            let loadingView = UIView(frame: UIScreen.main.bounds)
+            loadingView.backgroundColor = UIColor.white.withAlphaComponent(0.7)
+            let spinner = UIActivityIndicatorView(style: .large)
+            spinner.center = loadingView.center
+            spinner.startAnimating()
+            loadingView.addSubview(spinner)
+            newView.addSubview(loadingView)
+        } else {
+            DispatchQueue.main.async {
+                self.newView.subviews.last?.removeFromSuperview()
+            }
+        }
+    }
 }
 
 extension StockViewController: StockViewModelDelegate {
     func didFinishRequest() {
+        self.setLoading(false)
         stockList = viewModel.stockItems
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -73,6 +93,7 @@ extension StockViewController: ViewCodeProtocol {
     
     func buildViewHierarchy() {
         view.addSubview(tableView)
+        view.addSubview(newView)
     }
     
     func setupConstraints() {
