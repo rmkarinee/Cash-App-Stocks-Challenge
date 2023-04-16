@@ -8,7 +8,7 @@
 import Foundation
 
 protocol StockViewModelDelegate: AnyObject {
-    func didFinishRequest()
+    func didFinishRequest(isEmpty: Bool)
 }
 
 class StockViewModel {
@@ -29,13 +29,18 @@ class StockViewModel {
     }
     
     func requestStocks() {
-        let service = StocksService.success
+        let service = StocksService.empty
         let session = URLSessionProvider()
         session.request(type: StockModel.self, url: service) { (result) in
             switch result {
             case .success(let result):
-                self.stockItems = result.stocks
-                self.delegate?.didFinishRequest()
+                if result.stocks.count == 0 {
+                    self.delegate?.didFinishRequest(isEmpty: true)
+                } else {
+                    self.stockItems = result.stocks
+                    self.delegate?.didFinishRequest(isEmpty: false)
+                }
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }

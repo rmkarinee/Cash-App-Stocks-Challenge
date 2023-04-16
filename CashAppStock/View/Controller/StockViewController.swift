@@ -12,7 +12,7 @@ class StockViewController: UIViewController {
     var stockList: [StockItem] = []
     var viewModel = StockViewModel()
     var newView = UIView()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +24,6 @@ class StockViewController: UIViewController {
         viewModel.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
-
     }
     
     func registerCell() {
@@ -52,10 +51,22 @@ class StockViewController: UIViewController {
             }
         }
     }
+    
+    func openAlert() {
+        let message = UIAlertController(title: "Attention", message: "There are no items in the Stock", preferredStyle: .alert)
+        self.present(message, animated: true, completion: nil)
+    }
 }
 
 extension StockViewController: StockViewModelDelegate {
-    func didFinishRequest() {
+    func didFinishRequest(isEmpty: Bool) {
+        guard !isEmpty else {
+            self.setLoading(false)
+            DispatchQueue.main.async {
+                self.openAlert()
+            }
+            return print("Empty List")
+        }
         self.setLoading(false)
         stockList = viewModel.stockItems
         DispatchQueue.main.async {
