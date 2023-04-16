@@ -10,7 +10,7 @@ import XCTest
 
 final class StockViewModelTests: XCTestCase {
     
-    var viewModel = StockViewModel(URLSessionProvider())
+    var viewModel = StockViewModel()
     var stockMock = MockTests()
     
     override func setUp() {
