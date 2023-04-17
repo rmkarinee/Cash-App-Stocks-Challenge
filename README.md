@@ -1,7 +1,8 @@
 # Cash-App-Stocks-Challenge
 
 
-##How to run your project.
+##How to run your project
+
 The simulator's minimum version is 13.0
 There is no other pre require to build the project
 
