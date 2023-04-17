@@ -37,9 +37,9 @@ class StockViewController: UIViewController {
     func typeRequest() {
         setLoading(true)
         switch whichRequest {
-        case "Success Endpoint": return viewModel.requestStocks()
-        case "Empty Endpoint": return viewModel.requestEmptyStocks()
-        case "Error Endpoint": return viewModel.requestFailStocks()
+        case "Success Response": return viewModel.requestStocks()
+        case "Empty Response": return viewModel.requestEmptyStocks()
+        case "Error Response": return viewModel.requestFailStocks()
         default: break
         }
     }

@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let button = UIButton()
         button.backgroundColor = UIColor(red: 102/255.0, green: 255/255.0, blue: 102/255.0, alpha: 1)
         button.setTitleColor(.black, for: .normal)
-        button.setTitle("Success Endpoint", for: .normal)
+        button.setTitle("Success Response", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 26, weight: .regular)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(self.buttonPressed(sender:)), for: .touchUpInside)
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         let button = UIButton()
         button.backgroundColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 102/255.0, alpha: 1)
         button.setTitleColor(.black, for: .normal)
-        button.setTitle("Empty Endpoint", for: .normal)
+        button.setTitle("Empty Response", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 26, weight: .regular)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(self.buttonPressed(sender:)), for: .touchUpInside)
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         let button = UIButton()
         button.backgroundColor = UIColor(red: 255/255.0, green: 102/255.0, blue: 102/255.0, alpha: 1)
         button.setTitleColor(.black, for: .normal)
-        button.setTitle("Error Endpoint", for: .normal)
+        button.setTitle("Error Response", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 26, weight: .regular)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(self.buttonPressed(sender:)), for: .touchUpInside)

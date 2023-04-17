@@ -44,7 +44,7 @@ extension StockViewModel {
         session.request(type: StockModel.self, url: service) { (result) in
             switch result {
             case .success(let result):
-                if result.stocks.count == 0 {
+                if result.stocks.isEmpty {
                     self.delegate?.didFinishRequest(isEmpty: true)
                 } else {
                     self.stockItems = result.stocks
@@ -64,7 +64,7 @@ extension StockViewModel {
         session.request(type: StockModel.self, url: service) { (result) in
             switch result {
             case .success(let result):
-                if result.stocks.count == 0 {
+                if result.stocks.isEmpty {
                     self.delegate?.didFinishRequest(isEmpty: true)
                 } else {
                     self.stockItems = result.stocks
@@ -84,7 +84,7 @@ extension StockViewModel {
         session.request(type: StockModel.self, url: service) { (result) in
             switch result {
             case .success(let result):
-                if result.stocks.count == 0 {
+                if result.stocks.isEmpty {
                     self.delegate?.didFinishRequest(isEmpty: true)
                 } else {
                     self.stockItems = result.stocks
