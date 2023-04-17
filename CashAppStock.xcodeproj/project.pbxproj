@@ -13,6 +13,7 @@
 		42D7ECE429EC2BBE00F05674 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7ECE229EC2BBE00F05674 /* StockViewController.swift */; };
 		42D7ECE529EC2BBE00F05674 /* StockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D7ECE329EC2BBE00F05674 /* StockViewController.xib */; };
 		42D7ECE729EC32CC00F05674 /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7ECE629EC32CC00F05674 /* AlertConfig.swift */; };
+		42D7ECE929ECD53100F05674 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 42D7ECE829ECD53100F05674 /* README.md */; };
 		42EB64B629E729C800B7C2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64B529E729C800B7C2D9 /* AppDelegate.swift */; };
 		42EB64B829E729C800B7C2D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EB64B729E729C800B7C2D9 /* SceneDelegate.swift */; };
 		42EB64BD29E729C800B7C2D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EB64BB29E729C800B7C2D9 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		42D7ECE229EC2BBE00F05674 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
 		42D7ECE329EC2BBE00F05674 /* StockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockViewController.xib; sourceTree = "<group>"; };
 		42D7ECE629EC32CC00F05674 /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
+		42D7ECE829ECD53100F05674 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		42EB64B229E729C800B7C2D9 /* CashAppStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashAppStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EB64B529E729C800B7C2D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42EB64B729E729C800B7C2D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		42EB64A929E729C800B7C2D9 = {
 			isa = PBXGroup;
 			children = (
+				42D7ECE829ECD53100F05674 /* README.md */,
 				42EB64B429E729C800B7C2D9 /* CashAppStock */,
 				42D7ECC429EAF52B00F05674 /* CashAppStockTests */,
 				42EB64B329E729C800B7C2D9 /* Products */,
@@ -283,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D7ECE929ECD53100F05674 /* README.md in Resources */,
 				42EB64C229E729C900B7C2D9 /* LaunchScreen.storyboard in Resources */,
 				42EB64BF29E729C900B7C2D9 /* Assets.xcassets in Resources */,
 				42EB64D329E72F2D00B7C2D9 /* StockTableViewCell.xib in Resources */,
